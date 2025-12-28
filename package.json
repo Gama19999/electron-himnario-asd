@@ -1,0 +1,35 @@
+{
+  "name": "electron-himnario-asd",
+  "version": "2.0.0",
+  "description": "Himnario ASD con 614 himnos, desarrollado como SPA para web, con arquitectura de codificacion para Electron",
+  "keywords": [
+    "himnario",
+    "adventista",
+    "himnos",
+    "asd"
+  ],
+  "homepage": "https://github.com/Gama19999/electron-himnario-asd#readme",
+  "bugs": {
+    "url": "https://github.com/Gama19999/electron-himnario-asd/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Gama19999/electron-himnario-asd.git"
+  },
+  "license": "ISC",
+  "author": {
+    "name": "GAMARS",
+    "email": "gama.rios0110@gmail.com",
+    "url": "https://github.com/Gama19999/electron-himnario-asd"
+  },
+  "type": "commonjs",
+  "main": "electron\\main.js",
+  "scripts": {
+    "preview": "electron .",
+    "update-sources": "rmdir /S /Q .\\www && mkdir .\\www && robocopy ..\\angular-himnario-asd\\dist\\angular-himnario-asd\\browser .\\www /E",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "electron": "^39.2.7"
+  }
+}
