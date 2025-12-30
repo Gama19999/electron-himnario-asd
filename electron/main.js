@@ -24,7 +24,7 @@ function createWindow() {
         shell.openExternal(details.url) // Opens in-app links on external browser
         return { action: 'deny' }
     })
-    // window.webContents.openDevTools();
+    window.webContents.openDevTools();
     Menu.setApplicationMenu(null)
 }
 

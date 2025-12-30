@@ -1,6 +1,6 @@
 {
   "name": "electron-himnario-asd",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "description": "Himnario ASD con 614 himnos, desarrollado como SPA para web, con arquitectura de codificacion para Electron",
   "keywords": [
     "himnario",
