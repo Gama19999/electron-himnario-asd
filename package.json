@@ -1,6 +1,6 @@
 {
   "name": "electron-himnario-asd",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "Himnario ASD con 614 himnos, desarrollado como SPA para web, con arquitectura de codificacion para Electron",
   "keywords": [
     "himnario",
@@ -20,16 +20,30 @@
   "author": {
     "name": "GAMARS",
     "email": "gama.rios0110@gmail.com",
-    "url": "https://github.com/Gama19999/electron-himnario-asd"
+    "url": "https://github.com/Gama19999/electron-himnario-asd.git"
   },
   "type": "commonjs",
   "main": "electron\\main.js",
   "scripts": {
     "preview": "electron .",
     "update-sources": "rmdir /S /Q .\\www && mkdir .\\www && robocopy ..\\angular-himnario-asd\\dist\\angular-himnario-asd\\browser .\\www /E",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "electron-forge start",
+    "package": "electron-forge package",
+    "make": "electron-forge make"
   },
   "devDependencies": {
+    "@electron-forge/cli": "^7.10.2",
+    "@electron-forge/maker-deb": "^7.10.2",
+    "@electron-forge/maker-rpm": "^7.10.2",
+    "@electron-forge/maker-squirrel": "^7.10.2",
+    "@electron-forge/maker-zip": "^7.10.2",
+    "@electron-forge/plugin-auto-unpack-natives": "^7.10.2",
+    "@electron-forge/plugin-fuses": "^7.10.2",
+    "@electron/fuses": "^1.8.0",
     "electron": "^39.2.7"
+  },
+  "dependencies": {
+    "electron-squirrel-startup": "^1.0.1"
   }
 }

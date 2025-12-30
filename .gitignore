@@ -1,12 +1,8 @@
-# Compiled binary addons (https://nodejs.org/api/addons.html)
-build/Release
+# Electron packaged output
+dist
 
 # Dependency directories
 node_modules/
-
-# Next.js build output
-.next
-out
 
 # IntelliJ
 .idea

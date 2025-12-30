@@ -9,8 +9,10 @@ let appBlockerId;
 /** Creates a new app window */
 function createWindow() {
     const window = new BrowserWindow({
-        width: 1350,
-        height: 760,
+        width: 1250,
+        height: 700,
+        minWidth: 1250,
+        minHeight: 700,
         icon: path.join(__dirname, '..', 'www', 'assets', 'icons', 'hasd.png'),
         webPreferences: {
             preload: path.join(__dirname, 'preload.js')
@@ -22,7 +24,7 @@ function createWindow() {
         shell.openExternal(details.url) // Opens in-app links on external browser
         return { action: 'deny' }
     })
-    window.webContents.openDevTools();
+    // window.webContents.openDevTools();
     Menu.setApplicationMenu(null)
 }
 
@@ -53,7 +55,8 @@ function allowDisplaySleep(blockerId) {
 
 
 
-app.commandLine.appendSwitch('lang', 'es-419'); // Sets language pack
+app.commandLine.appendSwitch('lang', 'es-419'); // Sets language pack to Spanish (Latin America)
+app.commandLine.appendSwitch('enable-experimental-web-platform-features') // Enables media audio tracks
 
 app.whenReady().then(() => {
     // Renderer handlers
