@@ -1,6 +1,6 @@
 {
   "name": "electron-himnario-asd",
-  "version": "2.0.2",
+  "version": "2.0.3",
   "description": "Himnario ASD con 614 himnos, desarrollado como SPA para web, con arquitectura de codificacion para Electron",
   "keywords": [
     "himnario",
@@ -38,7 +38,6 @@
     "@electron-forge/maker-rpm": "^7.10.2",
     "@electron-forge/maker-squirrel": "^7.10.2",
     "@electron-forge/maker-zip": "^7.10.2",
-    "@electron-forge/plugin-auto-unpack-natives": "^7.10.2",
     "@electron-forge/plugin-fuses": "^7.10.2",
     "@electron/fuses": "^1.8.0",
     "electron": "^39.2.7"

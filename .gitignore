@@ -7,5 +7,5 @@ node_modules/
 # IntelliJ
 .idea
 
-# Project heavy media
-www/assets/video
+# Project test media folders
+video-sources/
