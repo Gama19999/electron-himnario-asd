@@ -1,17 +1,14 @@
 const { FusesPlugin } = require('@electron-forge/plugin-fuses');
 const { FuseV1Options, FuseVersion } = require('@electron/fuses');
-const path = require('node:path')
-
-const optimizeLocales = require('./hooks/optimizeLocales');
+const path = require('node:path');
+const { deleteUnusedLocales } = require('./hooks/delete-unused-locales');
 
 module.exports = {
   packagerConfig: {
-    name: 'Himnario ASD',
-    executableName: 'himnario_asd',
-    icon: path.join('www', 'assets', 'icons', 'hasd.ico'), //'www/assets/icons/hasd.ico', change to hasd.png for Linux
-    ignore: ['dist', 'hooks', 'linux', '.gitignore', 'forge.config.js', 'video-sources'],
+    executableName: 'himnarioasd',
+    icon: path.join('www', 'assets', 'icons', 'himnario-asd.ico'), // change to himnario-asd.png for Linux
+    ignore: ['hooks', 'linux', '.gitignore', 'forge.config.js', 'README.md'],
     asar: false, // No asar
-    extraResource: ['video-sources'],
     tmpdir: false,
     electronLanguages: ['es-419'],
   },
@@ -39,7 +36,7 @@ module.exports = {
     }),
   ],
   hooks: {
-    postPackage: optimizeLocales,
+    postPackage: deleteUnusedLocales,
   },
-  outDir: 'D:\\SOFTWARE'
+  outDir: 'D:\\SOFTWARE' // change path for Linux
 };

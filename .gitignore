@@ -7,5 +7,5 @@ node_modules/
 # IntelliJ
 .idea
 
-# Project test media folders
-video-sources/
+# Project media folders
+www/media/
