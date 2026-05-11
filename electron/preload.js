@@ -1,10 +1,10 @@
 /** Script that exposes selected properties of Electron to the Renderer proces */
 const { contextBridge, ipcRenderer } = require('electron')
 
-contextBridge.exposeInMainWorld('electron', {
+contextBridge.exposeInMainWorld('electronAPI', {
     /**
-     * Resolves electron resources folder path
-     * @returns Returns electron video sources path
+     * @param {string | undefined} like As `asleep` or `awake` — If `undefined` requests current display config
+     * @returns {Promise<boolean>} Promises current display config
      */
-    getVideoSourcesPath: () => ipcRenderer.invoke('get-video-sources-path'),
+    requestDisplaySleep: (like) => ipcRenderer.invoke('get-display-sleep', like),
 })

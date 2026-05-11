@@ -1,7 +1,8 @@
 {
   "name": "electron-himnario-asd",
-  "version": "2.0.3",
-  "description": "Himnario ASD con 614 himnos, desarrollado como SPA para web, con arquitectura de codificacion para Electron",
+  "productName": "HimnarioASD",
+  "version": "2.1.0",
+  "description": "Himnario ASD con 613 himnos, desarrollado como SPA para web, con arquitectura de codificacion para Electron",
   "keywords": [
     "himnario",
     "adventista",
