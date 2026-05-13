@@ -68,11 +68,14 @@ Una vez concluida la instalación, la aplicación estará disponible para su uso
 > [!IMPORTANT]
 > **WINDOWS**
 
-1. Para realizar la instalación en un equipo con Windows primero deberás descargar los tres (3) archivos comprimidos y guardarlos en una misma carpeta:
+1. Para realizar la instalación en un equipo con Windows primero deberás descargar los tres (6) archivos comprimidos y guardarlos en una misma carpeta:
 ```
 HimnarioASD_2.1.0_standalone.7z.001
 HimnarioASD_2.1.0_standalone.7z.002
 HimnarioASD_2.1.0_standalone.7z.003
+HimnarioASD_2.1.0_standalone.7z.004
+HimnarioASD_2.1.0_standalone.7z.005
+HimnarioASD_2.1.0_standalone.7z.006
 ```
 2. Lo siguiente es descargar el programa **7-zip** para descomprimir los archivos, puedes descargarlo desde su sitio oficial [7-zip](https://www.7-zip.org/) o dar clic [aquí](https://github.com/ip7z/7zip/releases/download/26.01/7z2601-x64.exe)
 3. Una vez tengas descargado el instalador del programa **7-zip** deberás instalarlo en tu PC
